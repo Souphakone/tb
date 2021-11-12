@@ -46,7 +46,7 @@ class MemberModel
         $res = [];
 
         foreach (DB::selectMany("SELECT * FROM members ORDER BY members.name", []) as $index) {
-            $res[] = self::make(['id' => $index['id'], 'name' => $index['name'], 'role_id' => $index['role_id']]);
+            $res[] = self::make(['id' => $index['id'], 'name' => $index['name'], 'role_id' => $index['role_id'], 'status_id' => $index['status_id']]);
         }
 
         return $res;

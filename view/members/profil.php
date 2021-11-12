@@ -1,5 +1,6 @@
 <?php
 ob_start();
+/*todo add variables*/
 ?>
 <section class="row">
     <table class="table">

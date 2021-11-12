@@ -16,6 +16,7 @@ class MemberController
     }
     public function profil()
     {
+        /*Todo add proctection*/
         $roleModel = new Role();
         $role = Role::find($_SESSION["member"]->role_id);
 
@@ -26,6 +27,7 @@ class MemberController
 
     public function userProfil()
     {
+        /*Todo add proctection*/
         $memberModel = new MemberModel();
         $member = $memberModel->find($_GET['user']);
 

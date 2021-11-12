@@ -32,8 +32,7 @@ class Role extends Model
     static function find(int $id): ?Role
     {
         $arr = parent::select($id);
-        $r = new
-            Role();
+        $r = new Role();
 
         if (empty($arr)) {
             return null;
