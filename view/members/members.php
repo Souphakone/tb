@@ -1,7 +1,6 @@
 <?php
 ob_start();
 ?>
-
 <section class="row">
     <table class="table">
         <thead>
@@ -18,7 +17,8 @@ ob_start();
             <?php foreach ($members as $member) : ?>
                 <tr>
                     <td>
-                        <?= $member->name ?>
+
+                        <a href="?controller=member&action=userprofil&user=<?= $member->id ?>"> <?= $member->name ?></a>
                     </td>
                     <td>
                         <?php foreach ($member->teams() as $key => $team) : ?>

@@ -26,5 +26,14 @@ class MemberController
 
     public function userProfil()
     {
+        $memberModel = new MemberModel();
+        $member = $memberModel->find($_GET['user']);
+
+        $roleModel = new Role();
+        $role = Role::find($member->role_id);
+
+        $statusModel = new Statu();
+        $Statu = Statu::find($member->Statu_id);
+        require("view\members\profil.php");
     }
 }
