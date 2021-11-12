@@ -9,6 +9,7 @@ class TeamController
 
         $TeamModel = new Team();
         $Teams = $TeamModel->myteams();
+        $Teams = $TeamModel->myteams();
 
         require("view\\teams\myteams.php");
     }
