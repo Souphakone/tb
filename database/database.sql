@@ -165,6 +165,14 @@ VALUES ("MEM", "Member"),
        ("MOD", "Moderator");
 
 -- -----------------------------------------------------
+-- Table `status` - Data
+-- -----------------------------------------------------
+INSERT INTO status(status.slug, status.name)
+VALUES ("ACT", "actif"),
+       ("UNA", "inactif"),
+       ("BAN", "Banni");
+
+-- -----------------------------------------------------
 -- Table `states` - Data
 -- -----------------------------------------------------
 INSERT INTO `states` (`id`, `slug`, `name`)

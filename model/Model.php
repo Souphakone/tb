@@ -66,7 +66,6 @@ abstract class Model
     {
         $res = DB::selectMany("SELECT * FROM " . self::getTable(), []);
         return $res === false ? [] : $res;
-
     }
 
     /**

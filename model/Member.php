@@ -9,6 +9,7 @@ class MemberModel
     public $name;
     public $password;
     public $role_id;
+    public $status_id;
 
     const DEFAULT = USER_ID;
 
@@ -61,7 +62,7 @@ class MemberModel
         }
 
         $res = $res[0];
-        return self::make(['id' => $res['id'], 'name' => $res['name'], 'role_id' => $res['role_id']]);
+        return self::make(['id' => $res['id'], 'name' => $res['name'], 'role_id' => $res['role_id'], 'status_id' => $res['status_id']]);
     }
 
     public function save(): bool

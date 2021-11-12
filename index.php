@@ -8,7 +8,7 @@ HomeController::autoConnection();
 if (isset($_GET['controller'])) {
     $controller = $_GET['controller'] . "Controller";
 
-    (isset($_GET['action'])) ? $action = $_GET['controller'] : $action = "home";
+    (isset($_GET['action'])) ? $action = $_GET['action'] : $action = "home";
 } else {
     $controller = "HomeController";
     $action = "home";
