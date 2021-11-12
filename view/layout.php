@@ -35,7 +35,10 @@ if (!isset($headerText)) {
     <header class="dashboard">
         <section class="container">
             <h1>TeamBuilder</h1>
-            <p>Vous êtes connecté en tant que : <?= $headerText ?></p>
+            <p>Vous êtes connecté en tant que : <?= $headerText ?><br />
+                <span class="start">Début d'examen
+                    <span>
+            </p>
 
         </section>
     </header>
